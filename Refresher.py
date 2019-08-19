@@ -36,3 +36,6 @@ for t in range(500):
     # Update Weights
     w1 -= learning_rate * grad_w1
     w2 -= learning_rate * grad_w2
+
+
+# Second Iteration: Numpy Arrays converted to Torch Tensors 

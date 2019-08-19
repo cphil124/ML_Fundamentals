@@ -120,7 +120,7 @@ for t in range(500):
     print(t, loss.item())
 
     # Calculate Gradient with autograd. The backward() function will calculate the 
-    # Gradient of the loss with respect to all tensors that do not have 'requires_grad = False'
+    # Gradient of the loss with respect to all tensors that have 'requires_grad = True'
     loss.backward()
 
     # No grad set so that the weight adjustments don't impact the computed gradients
